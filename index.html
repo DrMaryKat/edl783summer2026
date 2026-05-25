@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDL 783: Supervision and Staff Development | Dr. Mary K. Boudreaux</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+  :root {
+    --navy: #1A5276;
+    --teal: #148F77;
+    --gold: #D4AC0D;
+    --body: #2C3E50;
+    --light: #F8F9FA;
+    --border: #E8ECF0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--body);
+    background: #fff;
+    line-height: 1.6;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #1B4F72 60%, var(--teal) 100%);
+    color: #fff;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+  }
+
+  .hero-dept {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+
+  .hero-meta {
+    font-size: 0.85rem;
+    opacity: 0.75;
+  }
+
+  .hero-bar {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin: 1rem auto;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: 1.05rem;
+    color: #555;
+  }
+
+  .modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .module-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+
+  .card-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 1rem 1.25rem 0.75rem;
+    position: relative;
+  }
+
+  .card-week {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.7;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .card-number {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.2;
+  }
+
+  .card-body {
+    padding: 1rem 1.25rem;
+    font-size: 0.88rem;
+    color: #666;
+  }
+
+  .card-chapters {
+    font-size: 0.82rem;
+    color: var(--teal);
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .card-tag {
+    display: inline-block;
+    background: var(--light);
+    border: 1px solid var(--border);
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    color: #888;
+  }
+
+  .info-section {
+    background: var(--light);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .info-section h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.4rem;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+  }
+
+  .info-section p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  .footer strong { color: var(--navy); }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 2rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .modules-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-dept">Southern Connecticut State University · Educational Leadership &amp; Policy Studies</div>
+  <h1>EDL 783</h1>
+  <div class="hero-subtitle">Supervision and Staff Development</div>
+  <div class="hero-bar"></div>
+  <div class="hero-meta">Summer 2026 · Dr. Mary K. Boudreaux, EdD</div>
+</div>
+
+<div class="container">
+
+  <p class="intro">Interactive learning modules for the 092 Intermediate Administrator Certification sequence. Each module is designed to be completed during the 4:15–5:30 PM in-class block and includes embedded infographics with active processing prompts.</p>
+
+  <div style="max-width:720px; margin:0 auto 2.5rem; border-radius:10px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.12); border:1px solid var(--border);">
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+      <iframe src="https://app.heygen.com/embeds/abe834ee265c4dd18bc85bb31da53013" style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div style="padding:0.75rem 1.25rem; background:var(--light); border-top:1px solid var(--border);">
+      <div style="font-family:'Cormorant Garamond',Georgia,serif; font-size:1.1rem; font-weight:700; color:var(--navy);">Welcome to EDL 783</div>
+      <div style="font-size:0.85rem; color:#888;">A brief introduction from Dr. Boudreaux — watch before the first session</div>
+    </div>
+  </div>
+
+  <div class="modules-grid">
+
+    <a href="EDL783-Module1-Foundations.html" class="module-card">
+      <div class="card-header">
+        <div class="card-week">Week 1 · May 28</div>
+        <div class="card-title">Foundations of Supervision</div>
+        <div class="card-number">1</div>
+      </div>
+      <div class="card-body">
+        What supervision is and is not. Historical evolution from inspection to collaboration. Theoretical frameworks. School culture, climate, and the conditions for growth.
+        <div class="card-chapters">Introduction + Chapters 1–2</div>
+        <div class="card-tag">5 infographics</div>
+      </div>
+    </a>
+
+    <a href="EDL783-Module2-Models.html" class="module-card">
+      <div class="card-header">
+        <div class="card-week">Week 2 · June 4</div>
+        <div class="card-title">Supervision Models &amp; Evaluation</div>
+        <div class="card-number">2</div>
+      </div>
+      <div class="card-body">
+        Clinical supervision. Cognitive coaching, peer coaching, and developmental models. Teacher evaluation systems, frameworks, and the leader's role.
+        <div class="card-chapters">Chapters 3–4</div>
+        <div class="card-tag">2 infographics</div>
+      </div>
+    </a>
+
+    <a href="EDL783-Module3-Observation.html" class="module-card">
+      <div class="card-header">
+        <div class="card-week">Week 3 · June 11</div>
+        <div class="card-title">Observation &amp; Goal Setting</div>
+        <div class="card-number">3</div>
+      </div>
+      <div class="card-body">
+        Observation tools and techniques. Observer bias. The conference cycle. SMART goals. Observing in multilingual classrooms.
+        <div class="card-chapters">Chapters 5–6</div>
+        <div class="card-tag">7 infographics</div>
+      </div>
+    </a>
+
+    <a href="EDL783-Module4-ProfDev.html" class="module-card">
+      <div class="card-header">
+        <div class="card-week">Week 4 · June 18</div>
+        <div class="card-title">Professional Development Design</div>
+        <div class="card-number">4</div>
+      </div>
+      <div class="card-body">
+        Adult learning theory. Characteristics of effective PD. Guskey's evaluation levels. Collaborative teams and group dynamics. Facilitation protocols.
+        <div class="card-chapters">Chapters 7–8</div>
+        <div class="card-tag">8 infographics</div>
+      </div>
+    </a>
+
+    <a href="EDL783-Module5-Recruitment.html" class="module-card">
+      <div class="card-header">
+        <div class="card-week">Week 5 · June 25</div>
+        <div class="card-title">Recruitment, Selection &amp; Equity</div>
+        <div class="card-number">5</div>
+      </div>
+      <div class="card-body">
+        Strategic recruitment. Structured interviews. Legal frameworks. Retention, induction, and the distinct challenge of retaining teachers of color.
+        <div class="card-chapters">Chapters 9–10</div>
+        <div class="card-tag">9 infographics</div>
+      </div>
+    </a>
+
+    <a href="EDL783-Module6-LearningOrg.html" class="module-card">
+      <div class="card-header">
+        <div class="card-week">Week 6 · July 2</div>
+        <div class="card-title">Leading the Learning Organization</div>
+        <div class="card-number">6</div>
+      </div>
+      <div class="card-body">
+        Senge's five disciplines. Professional learning communities. Curriculum leadership. Synthesizing your supervisory platform.
+        <div class="card-chapters">Chapters 11–12</div>
+        <div class="card-tag">6 infographics</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="info-section">
+    <h2>About These Modules</h2>
+    <p>These interactive HTML modules are companion materials for <em>Supervision for School Leaders: Frameworks, Practice, and Equity</em> by Dr. Mary K. Boudreaux, EdD. Each module includes self-check quizzes, matching activities, case studies, reflection prompts, and visual summary infographics with active processing tasks.</p>
+    <p>Modules are designed to be completed in class during the 4:15–5:30 PM block of each Thursday session. They are not pre-class assignments.</p>
+    <p><strong>Primary text:</strong> Boudreaux, M. K. (2026). <em>Supervision for school leaders: Frameworks, practice, and equity</em>. Draft manuscript, Summer 2026 Edition.</p>
+  </div>
+
+  <div class="info-section">
+    <h2>Contact</h2>
+    <p><strong>Dr. Mary K. Boudreaux, EdD</strong></p>
+    <p>Associate Professor &amp; Doctoral Program Coordinator</p>
+    <p>Department of Educational Leadership &amp; Policy Studies</p>
+    <p>Southern Connecticut State University</p>
+    <p>boudreauxm1@southernct.edu</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>© 2026 <strong>Dr. Mary K. Boudreaux, EdD</strong>. All Rights Reserved.</p>
+  <p>Draft instructional materials. Do not redistribute.</p>
+</div>
+
+</body>
+</html>
